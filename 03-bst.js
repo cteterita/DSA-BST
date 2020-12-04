@@ -107,6 +107,8 @@ class BinarySearchTree {
         return this.left._findMin();
     }
 }
+module.exports = BinarySearchTree;
+
 // Create a binary search tree called BST and insert 3,1,4,6,9,2,5,7 into your tree. Compare your result with the result from the 1st exercise.
 
 let BST = new BinarySearchTree;
@@ -119,7 +121,7 @@ BST.insert(2,2);
 BST.insert(5,5);
 BST.insert(7,7);
 
-console.log(BST);
+//console.log(BST);
 
 // Create a binary search tree called BST and insert E A S Y Q U E S T I O N into your tree. Compare your result with the result from the 1st exercise.
 BST = new BinarySearchTree;
@@ -137,4 +139,6 @@ BST.insert('I');
 BST.insert('O');
 BST.insert('N');
 
-console.log(BST); // In the previous exercises I failed to set E and S the second time they came up, thinking they would replace the original nodes with those keys. However the bahavior here is, when the key matches the current node, to insert the key into the right tree. I imagine the wisdom of this approach varies depending on the implementation.
+//console.log(BST);
+
+// In the previous exercises I failed to set E and S the second time they came up, thinking they would replace the original nodes with those keys. However the bahavior here is, when the key matches the current node, to insert the key into the right tree. I imagine the wisdom of this approach varies depending on the implementation.
